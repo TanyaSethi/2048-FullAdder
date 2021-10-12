@@ -8,7 +8,7 @@ import java.util.Random;
 import java.lang.Integer;
 
 /**
- * @author Adrian Chmielewski-Anders
+ * @author Tanya Sethi
  */
 
 public class Grid extends Applet implements KeyListener {
@@ -22,26 +22,10 @@ public class Grid extends Applet implements KeyListener {
     CheckDuplicateColumn col=new CheckDuplicateColumn();
     boolean stopflag=false;
     boolean over=false;
-   // Integer val=null;
-  /* private HashMap<Integer, Color> colorLookup = new HashMap<Integer, Color>() {{
-        put(0, new Color(0x776365));
-        put(2, Color.BLUE);
-        put(4, Color.RED);
-        put(8, Color.CYAN);
-        put(16, Color.MAGENTA);
-        put(32, Color.PINK);
-        put(64, Color.DARK_GRAY);
-        put(128, Color.ORANGE);
-        put(256,  new Color(0xA34AF0));
-        put(512,  new Color(0xF34DFe));
-        put(1024, new Color(0xFF0845));
-        put(2048, new Color(0x20DC27));
-    }
-    };*/
 
     @Override
     public void init() {
-    	//setForeground(Color.black);
+    	setForeground(Color.green);
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board.length; j++) {
                 board[i][j] = 0;
